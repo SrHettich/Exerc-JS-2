@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <style>
+        body
+        {
+            background-color: aquamarine;
+            font: normal 15pt Arial;
+            ;
+        }
+        
+
+        header
+        {
+text-align: center
+        }
+
+        section{
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            padding: 15px;
+            width: 500px;
+            height: 500px;
+            margin: auto;
+            text-align: center;
+            box-shadow: 3px 5px 10px;
+        }
+
+        footer{
+            font: normal 20pt italic;
+            text-align: center;
+        }
+
+        section div img
+        {
+            width: 250px;
+            height: 325px;
+            border-radius: 50%;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+           <p> Ano de nascimento: 
+            <input type="number" name="txtano" id="txtano">
+            </p>
+            <P>
+                Sexo:
+                <input type="radio" name="sex" id="masc" checked> 
+                <label for="masc">Masculino</label>
+                <input type="radio" name="sex" id="fem">
+                <label for="fem">Feminino</label>
+            </P>
+
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+        <div id="res"></div>
+        
+    </section>
+    <footer>
+        <p>&copy; Jean Eduardo</p>
+    </footer>
+    <script src="pratc3.js"></script>
+</body>
+</html>
